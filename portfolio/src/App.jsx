@@ -2,15 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Hero from './components/Hero'
 
 
 function App() {
   return (
-    <div className="min-h-screen bg-charcoal text-coldwhite flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-electric">
-        Samuel Jiménez
-      </h1>
+    <div className="min-h-screen w-fullbg-charcoal text-coldwhite">
+      <Hero/>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
+    
   )
 }
 

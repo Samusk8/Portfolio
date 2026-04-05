@@ -37,7 +37,6 @@ function Hero() {
                     Developer · Artistic Roller Skater
                 </motion.p>
 
-                {/* dual cards */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

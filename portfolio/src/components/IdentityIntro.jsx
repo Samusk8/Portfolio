@@ -1,30 +1,18 @@
-import { motion } from "framer-motion"
+import SectionHeader from "../components/SectionHeader"
 
 function IdentityIntro({ title, text }) {
   return (
-    <section className="w-full py-20 px-6">
+    <div className="flex flex-col gap-6">
 
-      <div className="max-w-4xl mx-auto">
+      <SectionHeader title={title} />
 
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-3xl md:text-4xl font-semibold mb-6"
-        >
-          {title}
-        </motion.h2>
-
-        <div className="w-12 h-[2px] bg-electric mb-8"></div>
-
-        <div className="space-y-5 text-silver leading-relaxed text-lg">
-          {text.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
-        </div>
-
+      <div className="space-y-5 text-silver leading-relaxed text-lg max-w-3xl">
+        {text.map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
+        ))}
       </div>
 
-    </section>
+    </div>
   )
 }
 

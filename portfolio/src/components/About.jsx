@@ -19,12 +19,10 @@ function About() {
   return (
     <section id="about" className="relative w-full bg-charcoal text-coldwhite py-32 px-6 overflow-hidden">
 
-      {/* fondo sutil */}
       <div className="absolute inset-0 opacity-20 blur-3xl bg-electric/10"></div>
 
       <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-        {/* izquierda */}
         <div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -41,7 +39,6 @@ function About() {
 
         </div>
 
-        {/* derecha */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

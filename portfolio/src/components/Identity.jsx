@@ -1,12 +1,14 @@
+import SectionHeader from "./SectionHeader"
 function Identity({ active, setActive }) {
   return (
     <section className="w-full py-24 px-6">
 
       <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
 
-        <h2 className="text-4xl md:text-4xl font-semibold text-center">
-          Choose your perspective
-        </h2>
+        <SectionHeader
+          title="Choose your perspective"
+          centered
+        />
 
         <div className="relative flex p-2 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10">
 

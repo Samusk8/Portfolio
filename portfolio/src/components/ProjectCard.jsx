@@ -9,7 +9,6 @@ function ProjectCard({ project, featured }) {
       }`}
     >
 
-      {/* imagen */}
       <div className="relative h-48 overflow-hidden">
         <img
           src={project.image}
@@ -17,11 +16,9 @@ function ProjectCard({ project, featured }) {
           className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition duration-500"
         />
 
-        {/* overlay */}
         <div className="absolute inset-0 bg-charcoal/60 group-hover:bg-charcoal/40 transition"></div>
       </div>
 
-      {/* contenido */}
       <div className="relative z-10 p-6 flex flex-col gap-4">
 
         <h3 className="text-xl font-semibold">
@@ -32,7 +29,6 @@ function ProjectCard({ project, featured }) {
           {project.description}
         </p>
 
-        {/* tech */}
         <div className="flex flex-wrap gap-2">
           {project.tech.map((t, i) => (
             <span
@@ -54,7 +50,6 @@ function ProjectCard({ project, featured }) {
 
       </div>
 
-      {/* glow */}
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-electric/10 blur-2xl"></div>
 
     </motion.div>

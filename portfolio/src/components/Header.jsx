@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import Button from "./ui/Button"
 
 function Header() {
   return (
@@ -26,9 +27,9 @@ function Header() {
             Contact
           </button>
 
-          <button className="px-4 py-2 rounded-lg border border-white/10 backdrop-blur-md bg-white/5 hover:bg-white/10 transition text-sm">
+          <Button variant="small">
             Download CV
-          </button>
+          </Button>
 
         </motion.div>
 

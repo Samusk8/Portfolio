@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Button from './ui/Button'
 
 function Hero() {
     return (
@@ -44,9 +45,13 @@ function Hero() {
                     className="mt-12 flex gap-6"
                 >
 
-                    <div className="px-8 py-4 rounded-xl border border-white/10 backdrop-blur-md bg-white/5 hover:bg-white/10 transition cursor-pointer">
+                    <Button
+                        onClick={() => {
+                            document.getElementById("about").scrollIntoView()
+                        }}
+                    >
                         Learn More
-                    </div>
+                    </Button>
 
                 </motion.div>
 

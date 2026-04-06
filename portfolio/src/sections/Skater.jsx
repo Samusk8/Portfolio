@@ -1,4 +1,4 @@
-import IdentityIntro from "../components/IdentityIntro"
+import IdentityIntro from "../components/identity/IdentityIntro"
 import { identityContent } from "../data/identity"
 
 function Skater() {

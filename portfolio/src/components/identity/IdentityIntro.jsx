@@ -1,4 +1,4 @@
-import SectionHeader from "../components/SectionHeader"
+import SectionHeader from "../ui/SectionHeader"
 
 function IdentityIntro({ title, text }) {
   return (

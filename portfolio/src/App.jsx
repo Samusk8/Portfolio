@@ -2,12 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Hero from './components/Hero'
-import Header from './components/Header'
-import About from './components/About'
-import Identity from './components/Identity'
-import Developer from './components/Developer'
-import Skater from './components/Skater'
+import Hero from './sections/Hero'
+import Header from './components/layout/Header'
+import About from './sections/About'
+import Identity from './components/identity/Identity'
+import Developer from './sections/Developer'
+import Skater from './sections/Skater'
 
 
 function App() {

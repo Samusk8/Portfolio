@@ -1,4 +1,4 @@
-import SectionHeader from "./SectionHeader"
+import SectionHeader from "../ui/SectionHeader"
 function Identity({ active, setActive }) {
   return (
     <section className="w-full py-24 px-6">

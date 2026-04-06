@@ -1,8 +1,8 @@
-import IdentityIntro from "../components/IdentityIntro"
-import ProjectCard from "../components/ProjectCard"
+import IdentityIntro from "../components/identity/IdentityIntro"
+import ProjectCard from "../components/projects/ProjectCard"
 import { identityContent } from "../data/identity"
 import { projects } from "../data/projects"
-import SectionHeader from "../components/SectionHeader"
+import SectionHeader from "../components/ui/SectionHeader"
 
 function Developer() {
   const featured = projects[0]

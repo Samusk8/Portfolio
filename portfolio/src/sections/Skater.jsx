@@ -1,5 +1,6 @@
 import IdentityIntro from "../components/identity/IdentityIntro"
 import { identityContent } from "../data/identity"
+import SkaterTimeline from "../components/skater/SkaterTimeline"
 
 function Skater() {
     return (
@@ -8,7 +9,7 @@ function Skater() {
 
 
                 <IdentityIntro {...identityContent.skater} />
-
+                <SkaterTimeline/>
             </div>
         </section>
     )

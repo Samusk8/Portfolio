@@ -8,6 +8,7 @@ import About from './sections/About'
 import Identity from './components/identity/Identity'
 import Developer from './sections/Developer'
 import Skater from './sections/Skater'
+import Axels from './sections/Axels'
 
 
 function App() {

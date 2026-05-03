@@ -1,7 +1,4 @@
-import SectionHeader from "../ui/SectionHeader"
-function Identity({ active, setActive }) {
-  return (
-    <section className="w-full py-24 px-6">
+import SectionHeader from "../ui/SectionHeader";
 import { useI18n } from "../../i18n/I18nProvider";
 
 function Identity({ active, setActive }) {

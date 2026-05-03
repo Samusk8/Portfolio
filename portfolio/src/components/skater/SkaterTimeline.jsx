@@ -97,29 +97,36 @@ const SkaterTimeline = () => {
 
   const currentYearData = timelineData.find((yearEntry) => yearEntry.year === activeYear);
 
-  return (
-    <div className="w-full max-w-6xl mx-auto px-4">
-      
+  const formatPosition = (position) => {
+    if (!position) return "";
+    if (language === "en") return englishOrdinal(position);
+    return `${position}${t("skater.timeline.rankSuffix")}`;
+  };
 
-      <div className="flex flex-wrap justify-center gap-3 mb-10">
-        {timelineData.map((year) => (
+  const translateTimelineText = (value, dictionary) => {
+    const localized = localize(value);
+    if (typeof localized !== "string") return localized;
+    if (language === "es") return localized;
+    return replaceDictionary(localized, dictionary);
+  };
+
+  return (
+    <div className="mx-auto w-full max-w-6xl px-4">
+      <div className="mb-10 flex flex-wrap justify-center gap-3">
+        {timelineData.map((yearEntry) => (
           <button
-            key={year.year}
-            onClick={() => setActiveYear(year.year)}
-            className={`
-              px-4 py-2 rounded-full text-sm transition
-              ${
-                activeYear === year.year
-                  ? "bg-white text-black"
-                  : "bg-white/10 text-white hover:bg-white/20"
-              }
-            `}
+            key={yearEntry.year}
+            onClick={() => setActiveYear(yearEntry.year)}
+            className={`rounded-full px-4 py-2 text-sm transition ${
+              activeYear === yearEntry.year
+                ? "bg-white text-black"
+                : "bg-white/10 text-white hover:bg-white/20"
+            }`}
           >
-            {year.year}
+            {yearEntry.year}
           </button>
         ))}
       </div>
-
 
       <AnimatePresence mode="wait">
         <motion.div
@@ -130,34 +137,27 @@ const SkaterTimeline = () => {
           transition={{ duration: 0.4 }}
           className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {currentYearData.events.map((event, i) => (
+          {currentYearData?.events.map((event, index) => (
             <motion.div
-              key={i}
+              key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.05 }}
+              transition={{ delay: index * 0.05 }}
               whileHover={{ scale: 1.05, y: -4 }}
-              className={`
-                ${getCardStyle(event.position)}
-                p-4 rounded-xl cursor-pointer
-                transition-all duration-300
-              `}
+              className={`${getCardStyle(event.position)} cursor-pointer rounded-xl p-4 transition-all duration-300`}
             >
               <h4 className="font-semibold">
-                <span className="mr-2 opacity-80">
-                  {formatPosition(event.position)}
-                </span>
-                {event.title}
+                <span className="mr-2 opacity-80">{formatPosition(event.position)}</span>
+                {translateTimelineText(event.title, titleDictionary)}
               </h4>
 
-              <p className="text-sm opacity-80 mt-1">
-                {event.description}
+              <p className="mt-1 text-sm opacity-80">
+                {translateTimelineText(event.description, descriptionDictionary)}
               </p>
             </motion.div>
           ))}
         </motion.div>
       </AnimatePresence>
-
     </div>
   );
 };

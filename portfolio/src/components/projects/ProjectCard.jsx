@@ -1,5 +1,15 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { useI18n } from "../../i18n/I18nProvider";
+
+const techTranslations = {
+  Mobile: { es: "Movil", en: "Mobile" },
+  "API Integration": { es: "Integracion API", en: "API Integration" },
+  Web: { es: "Web", en: "Web" },
+  "Game Development": { es: "Desarrollo de Videojuegos", en: "Game Development" },
+};
+
+function ProjectCard({ project }) {
+  const { t, localize } = useI18n();
 
   return (
     <motion.div

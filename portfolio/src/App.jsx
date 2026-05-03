@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Hero from './sections/Hero'
 import Header from './components/layout/Header'
@@ -15,7 +13,6 @@ import Footer from './components/ui/footer'
 function App() {
   const [active, setActive] = useState("developer")
   return (
-    <div className="min-h-screen w-full bg-charcoal text-coldwhite">
     <div id="top" className="min-h-screen w-full bg-charcoal text-coldwhite">
 
       <Header/>

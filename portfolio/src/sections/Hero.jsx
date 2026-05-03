@@ -1,62 +1,60 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import Button from '../components/ui/Button'
+import { motion } from "framer-motion";
+import Button from "../components/ui/Button";
+import { useI18n } from "../i18n/I18nProvider";
 
 function Hero() {
-    return (
-        <section className='relative top-0 left-0 h-screen w-full object-cover overflow-hidden bg-charcoal'>
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className='absolute inset-0 w-full h-full object-cover opacity-70'
-            >
-                <source src='videos/skate-loop.mp4' type='video/mp4' />
-            </video>
+  const { t } = useI18n();
 
-            <div className="absolute inset-0 bg-charcoal/60 backdrop-blur-sm"></div>
+  return (
+    <section className="relative left-0 top-0 h-screen w-full overflow-hidden bg-charcoal object-cover">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover opacity-70"
+      >
+        <source src="videos/skate-loop.mp4" type="video/mp4" />
+      </video>
 
-            <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6">
+      <div className="absolute inset-0 bg-charcoal/60 backdrop-blur-sm" />
 
-                <motion.h1
-                    initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="text-6xl md:text-7xl font-bold tracking-tight"
-                >
-                    Samuel Jiménez
-                </motion.h1>
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-6xl font-bold tracking-tight md:text-7xl"
+        >
+          Samuel Jimenez
+        </motion.h1>
 
-                <motion.p
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2, duration: 0.8 }}
-                    className="mt-6 text-lg md:text-xl text-silver"
-                >
-                    Developer · Artistic Roller Skater
-                </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="mt-6 text-lg text-silver md:text-xl"
+        >
+          {t("hero.subtitle")}
+        </motion.p>
 
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    className="mt-12 flex gap-6"
-                >
-
-                    <Button
-                        onClick={() => {
-                            document.getElementById("about").scrollIntoView()
-                        }}
-                    >
-                        Learn More
-                    </Button>
-
-                </motion.div>
-
-            </div>
-        </section>
-    )
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="mt-12 flex gap-6"
+        >
+          <Button
+            onClick={() => {
+              document.getElementById("about").scrollIntoView();
+            }}
+          >
+            {t("hero.learnMore")}
+          </Button>
+        </motion.div>
+      </div>
+    </section>
+  );
 }
 
-export default Hero
+export default Hero;

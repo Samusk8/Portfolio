@@ -1,41 +1,33 @@
 import { motion } from "framer-motion"
+import { useI18n } from "../../i18n/I18nProvider";
 
-function ProjectCard({ project, featured }) {
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
-      className={`relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden group cursor-pointer ${
-        featured ? "p-0" : "p-0"
-      }`}
+      className="group relative cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-0 backdrop-blur-xl"
     >
-
       <div className="relative h-48 overflow-hidden">
         <img
           src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition duration-500"
+          alt={localize(project.title)}
+          className="h-full w-full object-cover opacity-80 transition duration-500 group-hover:scale-110"
         />
 
-        <div className="absolute inset-0 bg-charcoal/60 group-hover:bg-charcoal/40 transition"></div>
+        <div className="absolute inset-0 bg-charcoal/60 transition group-hover:bg-charcoal/40" />
       </div>
 
-      <div className="relative z-10 p-6 flex flex-col gap-4">
+      <div className="relative z-10 flex flex-col gap-4 p-6">
+        <h3 className="text-xl font-semibold">{localize(project.title)}</h3>
 
-        <h3 className="text-xl font-semibold">
-          {project.title}
-        </h3>
-
-        <p className="text-silver text-sm leading-relaxed">
-          {project.description}
-        </p>
+        <p className="text-sm leading-relaxed text-silver">{localize(project.description)}</p>
 
         <div className="flex flex-wrap gap-2">
-          {project.tech.map((t, i) => (
+          {project.tech.map((technology, index) => (
             <span
-              key={i}
-              className="text-xs px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-silver"
+              key={index}
+              className="rounded-lg border border-white/10 bg-white/5 px-3 py-1 text-xs text-silver"
             >
-              {t}
+              {localize(techTranslations[technology] || technology)}
             </span>
           ))}
         </div>
@@ -43,17 +35,16 @@ function ProjectCard({ project, featured }) {
         <a
           href={project.github}
           target="_blank"
-          className="text-electric text-sm hover:underline mt-2"
+          rel="noreferrer"
+          className="mt-2 text-sm text-electric hover:underline"
         >
-          View Project →
+          {t("developer.viewProject")} →
         </a>
-
       </div>
 
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-electric/10 blur-2xl"></div>
-
+      <div className="absolute inset-0 bg-electric/10 opacity-0 blur-2xl transition duration-300 group-hover:opacity-100" />
     </motion.div>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;

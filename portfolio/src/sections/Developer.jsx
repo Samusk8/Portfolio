@@ -3,6 +3,7 @@ import ProjectCard from "../components/projects/ProjectCard"
 import { identityContent } from "../data/identity"
 import { projects } from "../data/projects"
 import SectionHeader from "../components/ui/SectionHeader"
+import TechCloud from "../components/developer/TechCloud"
 
 function Developer() {
   const featured = projects[0]
@@ -14,7 +15,6 @@ function Developer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col gap-20">
 
 
-        <IdentityIntro {...identityContent.developer} />
 
         <div className="flex flex-col gap-10">
 

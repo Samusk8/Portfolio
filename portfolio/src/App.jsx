@@ -9,12 +9,14 @@ import Identity from './components/identity/Identity'
 import Developer from './sections/Developer'
 import Skater from './sections/Skater'
 import Axels from './sections/Axels'
+import Footer from './components/ui/footer'
 
 
 function App() {
   const [active, setActive] = useState("developer")
   return (
     <div className="min-h-screen w-full bg-charcoal text-coldwhite">
+    <div id="top" className="min-h-screen w-full bg-charcoal text-coldwhite">
 
       <Header/>
       <Hero/>
@@ -23,6 +25,8 @@ function App() {
 
       {active === "developer" && <Developer />}
       {active === "skater" && <Skater />}
+      <Axels/>
+      <Footer/>
     </div>
     
   )

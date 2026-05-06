@@ -1,22 +1,22 @@
 export const skaterPrograms = [
   {
     id: "fear",
-    season: { es: "Temporada 2025/26", en: "Season 2025/26" },
+    season: { es: "Temporadas 2025/26", en: "Seasons 2025/26" },
     title: { es: "Fear", en: "Fear" },
     discipline: { es: "Libre", en: "Free Skating" },
     image: "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_07_fwarvx.png",
     cardDescription: {
-      es: "Fear es un programa que representa como el miedo al fallo intenta atraparme, pero sigo avanzando hacia el con constancia y esperanza.",
-      en: "Fear is a program that represents how the fear of failure tries to catch me, but I keep moving toward it with consistency and hope.",
+      es: "Fear: False Evidence Appearing Real",
+      en: "Fear: False Evidence Appearing Real",
     },
     idea: {
       concept: {
-        es: "La idea central es la progresion: el miedo siempre esta presente, pero la disciplina y la esperanza empujan la historia hacia delante.",
-        en: "The core idea is progression: fear is always present, but discipline and hope move the story forward.",
+        es: "El miedo al juicio no es real, pero te bloquea; el programa muestra ese momento en el que te atrapa y la decisión de avanzar igualmente.",
+        en: "The fear of judgment isn't real, but it blocks you; the program shows that moment when it traps you and the decision to move forward anyway.",
       },
       maillotDescription: {
-        es: "Silueta estructurada con detalles de lineas marcadas para reforzar precision y velocidad.",
-        en: "Structured silhouette with sharp line details to reinforce precision and speed.",
+        es: "Por delante, base blanca con manos oscuras que te agarran representando el bloqueo; por detrás, negro con una silueta blanca corriendo que deja una estela de luz, simbolizando romper el miedo y avanzar.",
+        en: "Front: white base with dark hands grabbing you representing the blockage; back: black with a white silhouette running that leaves a trail of light, symbolizing breaking free from fear and moving forward.",
       },
       maillotPhotos: [
         "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_07_fwarvx.png",
@@ -25,8 +25,8 @@ export const skaterPrograms = [
       musicAudioUrl:
         "https://res.cloudinary.com/dhfcfbfqx/video/upload/v1775660255/torreHerculesCorunya_ubgfbq.mp4",
       musicNote: {
-        es: "Una mezcla de canciones de NF, basada en Intro III y Lost in the moment.",
-        en: "A mix of NF songs, based on Intro III and Lost in the moment.",
+        es: "Empieza con Intro III (NF) creando tensión interna, transiciona con Power-Haus (Larrynx) marcando el conflicto y la energía, y cierra con Lost in the Moment (NF) en un tono más reflexivo y liberador.",
+        en: "It starts with Intro III (NF) creating internal tension, transitions with Power-Haus (Larrynx) marking the conflict and energy, and closes with Lost in the Moment (NF) in a more reflective and liberating tone.",
       },
     },
     bestMoments: {
@@ -35,23 +35,93 @@ export const skaterPrograms = [
     },
   },
   {
+    id: "davyJones",
+    season: { es: "Temporadas 2023/24", en: "Seasons 2023/24" },
+    title: { es: "Davy Jones Heart", en: "Davy Jones Heart" },
+    discipline: { es: "Libre", en: "Free Skating" },
+    image: "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_20_mlzzsa.png",
+    cardDescription: {
+      es: "El corazón de Davy Jones está oculto y separado de él, pero sigue marcando su destino.",
+      en: "Davy Jones' heart is hidden and separate from him, but it still marks his destiny.",
+    },
+    idea: {
+      concept: {
+        es: "Representa algo enterrado que sigue vivo, una parte de ti que escondes pero que sigue teniendo poder.",
+        en: "It represents something buried that is still alive, a part of you that you hide but still has power.",
+      },
+      maillotDescription: {
+        es: "La tela marron que deja transparentar el corazon, simboliza la tierra que cubre el corazon enterrado, mientras se esconde en el fondo de mi cuerpo",
+        en: "The brown fabric that allows the heart to show through symbolizes the earth covering the buried heart, while it hides at the bottom of my body",
+      },
+      maillotPhotos: [
+        "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_20_mlzzsa.png",
+        "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_20_mlzzsa.png",
+      ],
+      musicAudioUrl:
+        "https://res.cloudinary.com/dhfcfbfqx/video/upload/v1775660253/catedralSantiagoCompostela_lfhi2j.mp4",
+      musicNote: {
+        es: "Banda sonora de la pelicula 'Piratas del Caribe', con una mezcla de temas orquestales y marineros para reforzar la narrativa de aventura y misterio.",
+        en: "Soundtrack from the movie 'Pirates of the Caribbean', with a mix of orchestral and sailor themes to reinforce the narrative of adventure and mystery.",
+      },
+    },
+    bestMoments: {
+      recapVideoUrl:
+        "https://res.cloudinary.com/dhfcfbfqx/video/upload/v1775660252/britishMuseumLondon_wdj2xp.mp4",
+    },
+  },
+  {
+    id: "radioactive",
+    season: { es: "Temporadas 2021/22", en: "Seasons 2021/22" },
+    title: { es: "Radioactive", en: "Radioactive" },
+    discipline: { es: "Libre", en: "Free Skating" },
+    image: "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_31_erpy91.png",
+    cardDescription: {
+      es: "Radioactive es una metafora a el renacimiento desde las cenizas, al despertar despues de la destrucción. ",
+      en: "Radioactive is a metaphor for rebirth from the ashes, awakening after destruction.",
+    },
+    idea: {
+      concept: {
+        es: "Me gusta llamarlo el Alpha, ya que con este programa pasé de la nada a donde me entcuentro ahora.",
+        en: "I like to call it the Alpha, because with this program I went from nothing to where I am now.",
+      },
+      maillotDescription: {
+        es: "Maillot básico con estelas de llamaradas que representan esa radioactividad y el surgir de las cenizas",
+        en: "Basic maillot with flame trails representing that radioactivity and the rising from the ashes",
+      },
+      maillotPhotos: [
+        "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_31_erpy91.png",
+        "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_31_erpy91.png",
+      ],
+      musicAudioUrl:
+        "https://res.cloudinary.com/dhfcfbfqx/video/upload/v1775660253/catedralSantiagoCompostela_lfhi2j.mp4",
+      musicNote: {
+        es: "Radioactive de Imagine Dragons es una canción que me marcó desde pequeño y siempre soñé con competir con ella.",
+        en: "Radioactive by Imagine Dragons is a song that marked me since I was little and I always dreamed of competing with it.",
+      },
+    },
+    bestMoments: {
+      recapVideoUrl:
+        "https://res.cloudinary.com/dhfcfbfqx/video/upload/v1775660252/britishMuseumLondon_wdj2xp.mp4",
+    },
+  },
+  {
     id: "chronoscore",
-    season: { es: "Temporada 2024/25", en: "Season 2024/25" },
+    season: { es: "Temporadas 2025/26", en: "Seasons 2025/26" },
     title: { es: "Chronoscore", en: "Chronoscore" },
     discipline: { es: "Libre", en: "Free Skating" },
     image: "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777838767/chronoscore_y7zbg0.jpg",
     cardDescription: {
-      es: "Un arco narrativo de contencion a liberacion con intensidad controlada.",
-      en: "A narrative arc from restraint to release with controlled intensity.",
+      es: "Chronoscore plantea un mundo futurista donde la tecnología colapsa y da paso a una reconstrucción entre lo electrónico y lo clásico, sin una narrativa explícita pero con una evolución clara de transformación.",
+      en: "Chronoscore envisions a futuristic world where technology collapses and gives way to a reconstruction between the electronic and the classical, without an explicit narrative but with a clear evolution of transformation.",
     },
     idea: {
       concept: {
-        es: "Chronoscore explora la tension entre control y liberacion manteniendo una estructura limpia.",
-        en: "Chronoscore explores tension between control and release while keeping a clean structure.",
+        es: "La coreografía representa la ruptura del sistema eléctrico y su transición hacia lo acústico y orgánico, terminando en una fusión entre pasado y presente a través de la música.",
+        en: "The choreography represents the breakdown of the electrical system and its transition towards the acoustic and organic, culminating in a fusion between past and present through music.",
       },
       maillotDescription: {
-        es: "Diseno minimalista con detalles de contraste para que las lineas corporales se lean desde lejos.",
-        en: "Minimalist design with contrast details to make body lines readable from distance.",
+        es: "Diseño dividido en dos mitades, azul eléctrico y blanco, atravesado por un pentagrama en ondas sintéticas con notas musicales distribuidas por todo el traje.",
+        en: "Design divided into two halves, electric blue and white, crossed by a staff in synthetic waves with musical notes distributed throughout the suit.",
       },
       maillotPhotos: [
         "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777838767/chronoscore_y7zbg0.jpg",
@@ -60,8 +130,8 @@ export const skaterPrograms = [
       musicAudioUrl:
         "https://res.cloudinary.com/dhfcfbfqx/video/upload/v1775660254/olympicParis_mfw4mm.mp4",
       musicNote: {
-        es: "Motivo de piano con texturas ambientales, pensado para reforzar el contraste interpretativo.",
-        en: "Piano motif plus ambient textures, designed to support contrast in interpretation.",
+        es: "Empieza con Ordinary Objects con sonido futurista, continúa con una explosión y efectos de cortocircuito, entra una base de violines en crecimiento y finaliza con Dark Horse como cierre moderno.",
+        en: "It starts with Ordinary Objects with a futuristic sound, continues with an explosion and short-circuit effects, enters a growing violin base, and ends with Dark Horse as a modern closing.",
       },
     },
     bestMoments: {
@@ -70,23 +140,58 @@ export const skaterPrograms = [
     },
   },
   {
-    id: "northern-drive",
-    season: { es: "Temporada 2023/24", en: "Season 2023/24" },
-    title: { es: "Northern Drive", en: "Northern Drive" },
+    id: "evilChristmas",
+    season: { es: "Temporadas 2023/24", en: "Seasons 2023/24" },
+    title: { es: "Evil Christmas", en: "Evil Christmas" },
     discipline: { es: "Libre", en: "Free Skating" },
-    image: "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_37_igxg4m.png",
+    image: "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_20_mlzzsa.png",
     cardDescription: {
-      es: "Un programa energetico centrado en ritmo, velocidad y compromiso en cada seccion.",
-      en: "An energetic program focused on rhythm, speed and commitment in every section.",
+      es: "Basado en aquel personaje que no siente el espiritu navideno, pero que en realidad esconde una energia imparable.",
+      en: "Based on that character who doesn't feel the Christmas spirit, but actually hides an unstoppable energy.",
     },
     idea: {
       concept: {
-        es: "Construido como un programa imparable donde el ritmo lidera la tecnica y la expresion acompana.",
-        en: "Built as a relentless program where rhythm leads technique and expression follows.",
+        es: "Un programa donde aprendí a expresarme y disfrutar de cada momento en la pista.",
+        en: "Aprogram where I learned to express myself and enjoy every moment skating.",
       },
       maillotDescription: {
-        es: "Paleta dinamica con acentos de contraste para reforzar la energia del movimiento.",
-        en: "Dynamic palette with contrast accents to reinforce movement energy.",
+        es: "Un maillot elegante con guipur dorado sobre un chaleco de terciopelo. Hace referencia a los elfos oscuros de la navidad ",
+        en: "An elegant maillot with golden guipure over a velvet vest. It references the dark elves of Christmas.",
+      },
+      maillotPhotos: [
+        "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_20_mlzzsa.png",
+        "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_20_mlzzsa.png",
+      ],
+      musicAudioUrl:
+        "https://res.cloudinary.com/dhfcfbfqx/video/upload/v1775660253/catedralSantiagoCompostela_lfhi2j.mp4",
+      musicNote: {
+        es: "Banda sonora 'God Rest Ye Merry Gentlemen' narra a la perfección la historia de este personaje",
+        en: "The music of 'god rest ye merry gentlemen' perfectly narrates the story of this character",
+      },
+    },
+    bestMoments: {
+      recapVideoUrl:
+        "https://res.cloudinary.com/dhfcfbfqx/video/upload/v1775660252/britishMuseumLondon_wdj2xp.mp4",
+    },
+  },
+  {
+    id: "heathens",
+    season: { es: "Temporadas 2021/22", en: "Seasons 2021/22" },
+    title: { es: "Heathens", en: "Heathens" },
+    discipline: { es: "Libre", en: "Free Skating" },
+    image: "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_37_igxg4m.png",
+    cardDescription: {
+      es: "Heathens trata sobre la desconfianza, el juicio social y la aceptación de las propias luchas mentales, describiendo a personas marginadas o con problemas emocionales.",
+      en: "Heathens is about mistrust, social judgment, and acceptance of one's own mental struggles, describing marginalized people or those with emotional issues.",
+    },
+    idea: {
+      concept: {
+        es: "Es un llamado a la tolerancia y la introspección, recordándonos que todos cargamos con demonios invisibles y que el juicio rápido es, en sí mismo, una forma de ceguera social.",
+        en: "It's a call for tolerance and introspection, reminding us that we all carry invisible demons and that quick judgment is, in itself, a form of social blindness.",
+      },
+      maillotDescription: {
+        es: "Un maillot oscuro en el que vemos como flujos oscuros se entrelazan atrapando el brillo morado",
+        en: "A dark maillot in which we see how dark flows intertwine trapping the purple shine",
       },
       maillotPhotos: [
         "https://res.cloudinary.com/dhfcfbfqx/image/upload/v1777835790/ChatGPT_Image_3_may_2026_21_14_37_igxg4m.png",
@@ -95,8 +200,8 @@ export const skaterPrograms = [
       musicAudioUrl:
         "https://res.cloudinary.com/dhfcfbfqx/video/upload/v1775660253/catedralSantiagoCompostela_lfhi2j.mp4",
       musicNote: {
-        es: "Banda sonora hibrida con bases potentes y golpes orquestales para impulsar una energia agresiva.",
-        en: "Hybrid score with strong beats and orchestral hits for aggressive momentum.",
+        es: "Fue compuesta para la película Suicide Squad (Escuadrón Suicida), por lo que la letra encaja con la idea de villanos o inadaptados sociales, aunque la banda buscaba que sonara como una canción propia de Twenty One Pilots.",
+        en: "It was composed for the movie Suicide Squad (Suicidal Tendencies), so the lyrics fit the idea of villains or socially adapted individuals, although the band aimed for it to sound like a song from Twenty One Pilots.",
       },
     },
     bestMoments: {

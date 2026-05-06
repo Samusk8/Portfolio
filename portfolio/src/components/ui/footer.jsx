@@ -9,6 +9,7 @@ import {
   Mail,
   MapPin,
   Sparkles,
+  User,
 } from "lucide-react";
 import { useI18n } from "../../i18n/I18nProvider";
 
@@ -23,9 +24,9 @@ const socialLinks = [
   {
     key: "github",
     label: "GitHub",
-    href: "https://github.com/samusk80",
+    href: "https://github.com/Samusk8",
     icon: Link2,
-    handle: "@samusk80",
+    handle: "@Samusk8",
   },
   {
     key: "instagram",
@@ -34,6 +35,13 @@ const socialLinks = [
     icon: Camera,
     handle: "@samusk806",
   },
+  {
+    key: "linkedin",
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/samuel-jiménez-b1b54b35a",
+    icon: User,
+    handle: "@samuel-jimenez-lopez",
+  }
 ];
 
 const fadeContainer = {
@@ -101,7 +109,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://github.com/samusk80"
+                href="https://github.com/Samusk8"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium transition hover:bg-white/10"
